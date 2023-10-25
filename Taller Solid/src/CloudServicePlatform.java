@@ -1,17 +1,11 @@
 public class CloudServicePlatform {
     private int cloudServicePlatform;
+    String[] arrayCloudServicePlatform = {"AWS", "Microsoft Azure", "Google Cloud"}
     public void hostingTo (AppWeb app) {
-        if (cloudServicePlatform==1) {
-            System.out.println("Connect to AWS");
-            // Logic
-        }if (cloudServicePlatform==2) {
-            System.out.println("Connect to Microsoft Azure");
-            // Logic
-        }else{
-            System.out.println("Connect to Google Cloud");
-            // Logic
-        }
+        System.out.println("Connect to: " + arrayCloudServicePlatform[cloudServicePlatform - 1]);
+        // More Code
     }
+
     // More Methods
 }
 
