@@ -1,5 +1,5 @@
 public class LogIn {
-    public void log (User user) {
+    public void log (User user) extends insertUser {
         System.out.println("Has access to the website");
         insertUserInDatabase(user);
         // Logic
